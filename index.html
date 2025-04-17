@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fausto Candido</title>
+    <style>
+      body {
+        margin: 50px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: #0c0c0e;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 24px; /* espaço entre os blocos */
+      }
+
+      .link-style {
+        color: white;
+        width: 600px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+      }
+
+      .link-style:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      .normal {
+        color: #fafafa;
+        font-size: 20px;
+        padding: 40px;
+        font-weight: bold;
+      }
+
+      a.link-style {
+        text-decoration: none;
+        display: block; /* força a tag a se comportar como bloco */
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="profile-pic" src="profile.png" alt="Perfil" />
+      <div class="normal">@faustocps</div>
+      <a class="link-style" href="https://www.x.com/faustocps" target="_blank">
+        X
+      </a>
+      <a
+        class="link-style"
+        href="https://www.instagram.com/faustocps"
+        target="_blank"
+      >
+        Instagram
+      </a>
+      <a
+        class="link-style"
+        href="http://www.strava.faustocps.com.br"
+        target="_blank"
+      >
+        Last physical acitivity
+      </a>
+      <a
+        class="link-style"
+        href="http://www.age.faustocps.com.br"
+        target="_blank"
+      >
+        Fausto's age
+      </a>
+      <a
+        class="link-style"
+        href="https://www.strava.com/athletes/faustocps"
+        target="_blank"
+      >
+        Strava
+      </a>
+    </div>
+  </body>
+</html>
