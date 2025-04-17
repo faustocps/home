@@ -2,106 +2,87 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Fausto Candido</title>
-    <style>
-      body {
-        margin: 50px;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: sans-serif;
-        background-color: #0c0c0e;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-        gap: 24px; /* espaço entre os blocos */
-      }
-
-      .link-style {
-        color: white;
-        width: 600px;
-        font-size: 20px;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 20px 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-        text-align: center;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        cursor: pointer;
-      }
-
-      .link-style:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-      }
-
-      .normal {
-        color: #fafafa;
-        font-size: 20px;
-        padding: 40px;
-        font-weight: bold;
-      }
-
-      a.link-style {
-        text-decoration: none;
-        display: block; /* força a tag a se comportar como bloco */
-      }
-
-      .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fausto Candido - Perfil Oficial</title>
+    <meta
+      name="description"
+      content="Perfil oficial de Fausto Candido - Links importantes e redes sociais"
+    />
+    <meta property="og:title" content="Fausto Candido - Perfil Oficial" />
+    <meta property="og:image" content="https://faustocps.com.br/profile.png" />
+    <link rel="canonical" href="https://faustocps.com.br" />
+    <link rel="preconnect" href="https://www.x.com" />
+    <link rel="preconnect" href="https://www.instagram.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <img class="profile-pic" src="profile.png" alt="Perfil" />
+      <img
+        class="profile-pic"
+        src="assets/profile.webp"
+        alt="Foto de perfil de Fausto Candido"
+        loading="lazy"
+        width="150"
+        height="150"
+      />
       <div class="normal">@faustocps</div>
-      <a class="link-style" href="https://www.x.com/faustocps" target="_blank">
-        X
+
+      <a
+        class="link-style"
+        href="https://www.x.com/faustocps"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-twitter fa-icon"></i>X (Twitter)
       </a>
+
       <a
         class="link-style"
         href="https://www.instagram.com/faustocps"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Instagram
+        <i class="fab fa-instagram fa-icon"></i>Instagram
       </a>
+
       <a
         class="link-style"
         href="https://linkedin.com/in/faustocps"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Linkedin
+        <i class="fab fa-linkedin fa-icon"></i>LinkedIn
       </a>
-      <a
-        class="link-style"
-        href="http://www.strava.faustocps.com.br"
-        target="_blank"
-      >
-        Last physical acitivity
-      </a>
+
       <a
         class="link-style"
         href="http://www.age.faustocps.com.br"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Fausto's age
+        <i class="fas fa-birthday-cake fa-icon"></i>Idade em Tempo Real
       </a>
+
+      <a
+        class="link-style"
+        href="http://www.strava.faustocps.com.br"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-running fa-icon"></i>Última Atividade Física
+      </a>
+
       <a
         class="link-style"
         href="https://www.strava.com/athletes/faustocps"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Strava
+        <i class="fab fa-strava fa-icon"></i>Perfil Completo no Strava
       </a>
     </div>
   </body>
