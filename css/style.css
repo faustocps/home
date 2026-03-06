@@ -39,6 +39,14 @@
   }
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+
+  background: var(--primary-bg);
+}
+
 html,
 body {
   height: 100%;
