@@ -2,8 +2,10 @@
   --primary-bg: #0c0c0e;
   --secondary-bg: rgba(255, 255, 255, 0.1);
   --text-color: #fafafa;
+  --text-age: #0c0c0e;
   --hover-bg: rgba(255, 255, 255, 0.15);
   --accent-color: #rgba(255, 255, 255, 0.15);
+  --red: #ff4d4d;
 }
 
 /* Tema claro */
@@ -15,6 +17,7 @@
     --hover-bg: rgba(0, 0, 0, 0.08);
   }
 
+  html,
   body {
     color-scheme: light;
   }
@@ -27,23 +30,58 @@
     --secondary-bg: rgba(255, 255, 255, 0.1);
     --text-color: #fafafa;
     --hover-bg: rgba(255, 255, 255, 0.15);
+    --text-age: #b0b0b0;
   }
 
+  html,
   body {
     color-scheme: dark;
   }
 }
 
+html,
 body {
-  margin: 50px;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.text-age {
+  margin: 30px;
+  font-size: 14px;
+  color: var(--text-age);
+}
+
+body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Segoe UI", sans-serif;
-  background-color: var(--primary-bg);
+
+  background:
+    radial-gradient(
+      circle at 50% -20%,
+      rgba(255, 255, 255, 0.15),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 120%,
+      rgba(255, 255, 255, 0.05),
+      transparent 60%
+    ),
+    var(--primary-bg);
+
   color: var(--text-color);
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .container {
@@ -77,8 +115,10 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
-  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.3s ease, background-color 0.2s ease;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s ease,
+    background-color 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   display: flex;
