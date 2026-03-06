@@ -65,7 +65,7 @@ main {
 .text-age {
   margin: 30px;
   font-size: 14px;
-  color: var(--text-age);
+  color: var(--red);
 }
 
 body {
